@@ -59,20 +59,15 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
     }
   }
 
-
-    @for $i from 1 through $md-columns {
-      .col-md-#{$i} {
-        width: percentage($i / $md-columns);
-      }
+  @for $i from 1 through $md-columns {
+    .col-md-#{$i} {
+      width: percentage($i / $md-columns);
     }
   }
 
-
-
-    @for $i from 1 through $lg-columns {
-      .col-lg-#{$i} {
-        width: ($lg-unit + $gutter) * $i;
-      }
+  @for $i from 1 through $lg-columns {
+    .col-lg-#{$i} {
+      width: ($lg-unit + $gutter) * $i;
     }
   }
 }
